@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  current_team_size: 1
+  desired_team_size: 1
+  headline: MyText
+
+two:
+  title: MyString
+  description: MyText
+  current_team_size: 1
+  desired_team_size: 1
+  headline: MyText
