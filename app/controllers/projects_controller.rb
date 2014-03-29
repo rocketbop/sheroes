@@ -21,6 +21,10 @@ class ProjectsController < ApplicationController
   def edit
   end
 
+
+
+
+
   # POST /projects
   # POST /projects.json
   def create
@@ -48,6 +52,7 @@ class ProjectsController < ApplicationController
         format.html { render action: 'edit' }
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
+
     end
   end
 
@@ -69,6 +74,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:title, :description, :current_team_size, :desired_team_size, :headline)
+      params.require(:project).permit(:title, :description, :current_team_size, :desired_team_size, :headline, :project_type, :project_length, :primary_technology, :secondary_technology, :tertiary_technology)
     end
 end

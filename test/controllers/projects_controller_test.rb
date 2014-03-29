@@ -3,6 +3,14 @@ require 'test_helper'
 class ProjectsControllerTest < ActionController::TestCase
   setup do
     @project = projects(:one)
+    # Put in the below lines, because otherwise when you use validates to prevent projects from being created
+    # without title or description being included, the validation will fail.
+    @update = {
+      title:        'Lorem Ipsum',
+      description:  'A description',
+      headline:     'Hey guys',
+      project_type: 'Some type'
+    }
   end
 
   test "should get index" do
@@ -18,7 +26,7 @@ class ProjectsControllerTest < ActionController::TestCase
 
   test "should create project" do
     assert_difference('Project.count') do
-      post :create, project: { current_team_size: @project.current_team_size, description: @project.description, desired_team_size: @project.desired_team_size, headline: @project.headline, title: @project.title }
+      post :create, project: @update
     end
 
     assert_redirected_to project_path(assigns(:project))
@@ -35,7 +43,7 @@ class ProjectsControllerTest < ActionController::TestCase
   end
 
   test "should update project" do
-    patch :update, id: @project, project: { current_team_size: @project.current_team_size, description: @project.description, desired_team_size: @project.desired_team_size, headline: @project.headline, title: @project.title }
+    patch :update, id: @project, project: @update
     assert_redirected_to project_path(assigns(:project))
   end
 

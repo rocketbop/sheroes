@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316163152) do
+ActiveRecord::Schema.define(version: 20140316181237) do
 
   create_table "projects", force: true do |t|
     t.string   "title"
@@ -21,6 +21,11 @@ ActiveRecord::Schema.define(version: 20140316163152) do
     t.text     "headline"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "project_type"
+    t.string   "project_length"
+    t.string   "primary_technology"
+    t.string   "secondary_technology"
+    t.string   "tertiary_technology"
   end
 
 end
