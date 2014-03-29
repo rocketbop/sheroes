@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller.controller_name%>'>
-
-<%= yield %>
+	 
+	<header class="header">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Login</li>
+			</ul>
+		</nav>
+	</header>
+	<%= yield %>
 
 </body>
 </html>
