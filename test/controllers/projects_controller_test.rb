@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ProjectsControllerTest < ActionController::TestCase
   setup do
-    @project = projects(:one)
+    @project = projects(:hit)
     # Put in the below lines, because otherwise when you use validates to prevent projects from being created
     # without title or description being included, the validation will fail.
     @update = {

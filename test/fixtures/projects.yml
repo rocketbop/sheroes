@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+hit:
   title: HitMeBaby
   description:
     This project is all about finding hitmen. You need a hitman. You don't have a hitman.
