@@ -1,3 +1,6 @@
+
+@import "utilities/variables";
+
 $dark_red: #843442;
 $mid_red: #8f3545;
 $dark_green: #359b89;
@@ -7,13 +10,18 @@ $light_green: #36b49e;
 
 
 .header {
-  background-color:   $mid_red;
-  height:             3em;
+  background-color: $mid_grey;
+  height: 3em;
+  margin-bottom: 1em;
   nav {
     ul {
       li {
-        display:    inline;
+        display:  inline;
+        color: $off-white;
+        font-family: "Lato";
+        font-weight: 300;
       }
     }
   }
+  
 }
