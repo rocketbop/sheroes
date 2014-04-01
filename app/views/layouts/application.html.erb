@@ -8,17 +8,26 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class='<%= controller.controller_name%>'>
-	 
-	<header class="header">
-		<nav>
-			<!-- <img src=""> -->
-			<ul>
-				<li>Home</li>
-				<li>Login</li>
-			</ul>
-		</nav>
-	</header>
-	<%= yield %>
+	<div id="banner">
+		<%= image_tag("logo.png")%>
+  </div>
+
+	<div id="columns">
+	  <div id="side">
+	  	<ul>
+	  		<li>Home</li>
+	  		<li>FAQ</li>
+	  		<li>News</li>
+	  	</ul>
+	  </div>	
+		
+	</div>
+	<div id="main">
+	  <%= yield %>
+	</div>
+	<footer>
+		<p>&copy; 2014</p>
+	</footer>
 
 </body>
 </html>

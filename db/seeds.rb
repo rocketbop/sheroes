@@ -14,7 +14,8 @@ Project.create!(title: 'Wait Room',
 		</p>},
 	current_team_size: 1,
 	desired_team_size: 2,
-	headline: 'Paper Ticket Replacement Web App System for Queue Scheduling')
+	headline: 'Paper Ticket Replacement Web App System for Queue Scheduling',
+	project_type: 'Mobile App')
 
 Project.create!(title: 'Another application',
 	description:
@@ -22,4 +23,14 @@ Project.create!(title: 'Another application',
 		</p>},
 	current_team_size: 3,
 	desired_team_size: 5,
-	headline: 'Social Network For Butterfly Lovers!')
+	headline: 'Social Network For Butterfly Lovers!',
+	project_type: 'Social Network')
+	
+	Project.create!(title: 'My LinkedIn',
+  description:
+    %{<p>A social employment network for those seeking occupations outside the standard streams.
+    </p>},
+  current_team_size: 3,
+  desired_team_size: 5,
+  headline: 'Work for me!',
+  project_type: 'Social Employment Network')
