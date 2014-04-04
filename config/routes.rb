@@ -1,4 +1,6 @@
 Sideheroes::Application.routes.draw do
+  resources :watchlists
+
   get "store/index"
   `get "store/index"`
   resources :projects
