@@ -1,0 +1,25 @@
+<% # notice = "A piece of string" %>
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Projects Offered</h1>
+
+<% cache ['store', Project.latest] do %>
+	<% @projects.each do |project| %>
+	  <% cache ['entry', project] do %>
+		  <div class="entry">
+		    <h3><%= project.title %></h3>
+		    <h3><%= link_to project.title, @project %></h3>
+		    <%= sanitize(project.description) %>
+		    
+		    <!-- routes matches a post request to a controller to that controller's create method-->
+		    <%= button_to 'Add to Watchlist', line_items_path(project_id: project) %> 
+		  </div>  
+	    
+	    
+		<% end %>
+	<% end %>
+<% end %>
+
+	

@@ -1,0 +1,36 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "utilities/variables";
+
+.store {
+  h1 {
+    margin: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-bottom: 0.5em;
+    font-family: "Lato";
+    font-weight: 300;
+    color: $mid-grey;
+  }
+  
+  .entry {
+    overflow: auto;
+    margin-top: 1em;
+    border-bottom: 1px dotted;
+    background-color: $light-blue;
+    min-height: 100px;
+  }
+  
+  h3 {
+   font-size: 1.2em;
+   font-family: "Lato";
+   margin-left: 100px;
+   color: $dark-grey;
+  }
+  
+  p {
+    margin-left: 100px;
+  }
+}

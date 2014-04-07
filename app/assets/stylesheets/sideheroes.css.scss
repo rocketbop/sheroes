@@ -1,0 +1,46 @@
+
+@import "utilities/variables";
+
+#banner {
+  background: $dark-grey;
+  
+}
+
+#notice {
+  color: #000;
+}
+
+#columns {
+  background: $off-white;
+  
+  #main {
+    margin-left: 17em;
+    background: white;
+  }
+  
+  #side {
+    float: left;
+    width: 13em;
+    background: $mid-red;
+    height: 50em;
+    margin-top: 2em;
+    
+    ul {
+      padding: 0;
+      li {
+        color: $off-white;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 2em;
+        font-family: Lato;
+      }
+    }
+  }
+  
+}
+
+footer {
+  p {
+    text-align: center;
+  }
+}
