@@ -26,6 +26,8 @@ class LineItemsController < ApplicationController
 
   # POST /line_items
   # POST /line_items.json
+  
+  # Below we are changing the create method to create 
   def create
     project = Project.find(params[:project_id]) #project_id passed with the post command and collected in the params object
     # @line_item = LineItem.new(line_item_params)
