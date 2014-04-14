@@ -9,15 +9,16 @@
 </head>
 <body class='<%= controller.controller_name%>'>
 	<div id="banner">
-		<a href="root"><%= image_tag("logo.png")%></a>
+		<a href="/"><%= image_tag("logo.png")%></a> <!-- link to the root of the site -->
   </div>
 
 	<div id="columns">
 	  <div id="side">
 	  	<ul>
-	  		<li><a href="../">Home</a></li>
+	  		<li><a href="/">Home</a></li>
 	  		<li><a href="watchlists">Watchlists</a></li>
-	  		<li><a href="projects">Projects</a></li>
+	  		<li><a href="projects">Projects (Old)</a></li>
+	  		<li><a href="store">Projects</a></li>
 		
 	  		<li>You were last here today, at <%= Time.now %></li>
 	  	</ul>

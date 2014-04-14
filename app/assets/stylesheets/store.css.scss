@@ -32,5 +32,15 @@
   
   p {
     margin-left: 100px;
+    
+   
+  }
+  
+}
+
+.entry {
+  p,
+  form div {
+    display: inline;
   }
 }
